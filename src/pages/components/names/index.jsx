@@ -2,7 +2,7 @@ function Names(props) {
     return (
         <>
             <div style={{backgroundColor:"yellow"}}>
-                {props.name}
+                 {props.name}
             </div>
         </>
     )
