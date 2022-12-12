@@ -1,7 +1,9 @@
+import Names from "./components/names";
+
 function ZooWrapper() {
     return (
         <>
-            @Séverin Fux
+            <Names name={'Séverin'}/>
         </>
     )
 }
