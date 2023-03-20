@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-function Form() {
+const Form =()=> {
 
     const [geschwindkeit, setGeschwindkeit] = useState(0)
     const [zeit, setZeit] = useState(0)

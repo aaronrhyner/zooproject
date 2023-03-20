@@ -10,15 +10,6 @@ import RandomFotos from "./pages/components/RandomFotos/RandomFotos";
 
 
 function App() {
-    //<BrowserRouter>
-    //    <Routes>
-    //        <Route path="/zoo" element={<MainComponent/>}>
-    //            <Route index element={<Login/>}/>
-    //            <Route path="blogs" element={<Table/>}/>
-    //            <Route path="contact" element={<WaehrungsUmrechner/>}/>
-    //        </Route>
-    //    </Routes>
-    //</BrowserRouter>
     return (
         <div className="App">
 
