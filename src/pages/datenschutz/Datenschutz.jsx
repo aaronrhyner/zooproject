@@ -5,16 +5,16 @@ function Datenschutz() {
     <p>Stand: 27. März 2023</p>
     <h2>Inhaltsübersicht</h2>
     <ul className="index">
-        <li><a className="index-link" href="#m3">Verantwortlicher</a></li>
-        <li><a className="index-link" href="#mOverview">Übersicht der Verarbeitungen</a></li>
-        <li><a className="index-link" href="#m13">Maßgebliche Rechtsgrundlagen</a></li>
-        <li><a className="index-link" href="#m27">Sicherheitsmaßnahmen</a></li>
-        <li><a className="index-link" href="#m12">Löschung von Daten</a></li>
-        <li><a className="index-link" href="#m134">Einsatz von Cookies</a></li>
-        <li><a className="index-link" href="#m225">Bereitstellung des Onlineangebotes und Webhosting</a></li>
-        <li><a className="index-link" href="#m182">Kontakt- und Anfragenverwaltung</a></li>
-        <li><a className="index-link" href="#m15">Änderung und Aktualisierung der Datenschutzerklärung</a></li>
-        <li><a className="index-link" href="#m10">Rechte der betroffenen Personen</a></li>
+        <li><a className="index-link" href="router#m3">Verantwortlicher</a></li>
+        <li><a className="index-link" href="router#mOverview">Übersicht der Verarbeitungen</a></li>
+        <li><a className="index-link" href="router#m13">Maßgebliche Rechtsgrundlagen</a></li>
+        <li><a className="index-link" href="router#m27">Sicherheitsmaßnahmen</a></li>
+        <li><a className="index-link" href="router#m12">Löschung von Daten</a></li>
+        <li><a className="index-link" href="router#m134">Einsatz von Cookies</a></li>
+        <li><a className="index-link" href="router#m225">Bereitstellung des Onlineangebotes und Webhosting</a></li>
+        <li><a className="index-link" href="router#m182">Kontakt- und Anfragenverwaltung</a></li>
+        <li><a className="index-link" href="router#m15">Änderung und Aktualisierung der Datenschutzerklärung</a></li>
+        <li><a className="index-link" href="router#m10">Rechte der betroffenen Personen</a></li>
     </ul>
     <h2 id="m3">Verantwortlicher</h2>
     <h2 id="mOverview">Übersicht der Verarbeitungen</h2>
