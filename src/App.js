@@ -1,12 +1,14 @@
-import "./App.css";
-import ZooWrapper from "./pages/ZooWrapper";
+import './App.css'
+import SidebarDrawer from './pages/sidebarDrawer/SidebarDrawer'
+import AppRouter from './AppRouter'
 
 function App() {
-    return (
-      <div className="App">
-          <ZooWrapper />
-      </div>
-    );
+  return (
+    <div className="App">
+      <SidebarDrawer />
+      <AppRouter />
+    </div>
+  )
 }
 
-export default App;
+export default App
