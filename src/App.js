@@ -1,6 +1,6 @@
 import "./App.css";
 import ZooWrapper from "./pages/ZooWrapper";
-import News from "./pages/News/News";
+import News from "./pages/news/News";
 
 function App() {
     return (

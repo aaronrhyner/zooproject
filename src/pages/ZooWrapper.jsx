@@ -1,5 +1,5 @@
 function ZooWrapper() {
-  return <>Hey Friends That's Hour Main Page!</>;
+  return <h1>Hey Friends That's Hour Main Page!</h1>;
 }
 
 export default ZooWrapper
