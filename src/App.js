@@ -1,12 +1,11 @@
-import './App.css';
+import "./App.css";
 import ZooWrapper from "./pages/ZooWrapper";
-
 
 function App() {
     return (
-        <div className="App">
-            <ZooWrapper/>
-        </div>
+      <div className="App">
+          <ZooWrapper />
+      </div>
     );
 }
 
