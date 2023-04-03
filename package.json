@@ -21,7 +21,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "preinstall": "npm install --package-lock-only --ignore-scripts && npx npm-force-resolutions"
+    "prettier": "npx prettier --write ."
   },
   "eslintConfig": {
     "extends": [
@@ -43,9 +43,5 @@
   },
   "devDependencies": {
     "prettier": "2.8.7"
-  },
-  "resolutions": {
-    "@types/react": "17.0.2",
-    "@types/react-dom": "17.0.2"
   }
 }
