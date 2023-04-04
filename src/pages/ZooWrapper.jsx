@@ -1,5 +1,7 @@
+import routes from "../routes/Routes";
+
 function ZooWrapper() {
-  return <h1>Hey Friends That's Hour Main Page!</h1>
+  return (<div style={{backgroundColor:"lightblue"}}>{routes.map(route =><>{route.icon} - {route.name}</> )} </div>);
 }
 
-export default ZooWrapper
+export default ZooWrapper;
