@@ -38,7 +38,6 @@ export default function InteractiveMap() {
       </map>
 
       <InteractiveMapDialog handleClose={handleClose} open={open} obj={obj} />
-      {JSON.stringify(obj || 'isEmpty')}
     </div>
   )
 }
