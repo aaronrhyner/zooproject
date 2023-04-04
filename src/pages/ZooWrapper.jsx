@@ -1,5 +1,12 @@
+import React from 'react'
+import InteractiveMap from './interactiveMap/InteractiveMap'
+
 function ZooWrapper() {
-  return <>Hey Friends That's Hour Main Page!</>;
+  return (
+    <>
+      <InteractiveMap></InteractiveMap>
+    </>
+  )
 }
 
 export default ZooWrapper
