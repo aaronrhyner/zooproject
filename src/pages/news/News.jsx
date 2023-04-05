@@ -1,5 +1,6 @@
 import { Box, Grid } from '@mui/material'
 import news from './NewsArray'
+import { useState } from 'react'
 
 function News() {
   const boxStyling = {
@@ -19,41 +20,42 @@ function News() {
     padding: '0 0'
   }
 
+  const [isShown, setIsShown] = useState(false)
+
+  const handleClick = () => {
+    setIsShown((current) => !current)
+  }
+
   return (
     <div style={{ backgroundColor: 'lightblue' }}>
       <h1>News</h1>
 
       {news.map((news) => (
-        <Box
-          style={boxStyling}
-          onClick={() => alert('Going On With New Page')}
-          on
-        >
-          <Grid container spacing={3} columns={16}>
-            <Grid item xs={3}>
-              <img
-                style={imgStyling}
-                src={news.img}
-                alt={news.alt}
-                height={100}
-              />
+        <div onClick={handleClick}>
+          <Box style={boxStyling} on>
+            <Grid container spacing={3} columns={16}>
+              <Grid item xs={3}>
+                <img
+                  style={imgStyling}
+                  src={news.img}
+                  alt={news.alt}
+                  height={100}
+                />
+              </Grid>
+              <Grid item xs={4}>
+                <h3>{news.titel}</h3>
+                <h6>{news.text}</h6>
+              </Grid>
+              <Grid item xs={6}>
+                Time: <u>{news.time}</u> Uhr <br />
+                Place: {news.place}
+                <br />
+              </Grid>
             </Grid>
-            <Grid item xs={4}>
-              <h3>{news.titel}</h3>
-              <h6>{news.text}</h6>
-            </Grid>
-            <Grid item xs={6}>
-              Time: <u>{news.time}</u> Uhr <br />
-              Place: {news.place}
-              <br />
-            </Grid>
-          </Grid>
-        </Box>
+          </Box>
+        </div>
       ))}
       <br />
-      <div style={{ border: '1px dotted black', backgroundColor: 'pink' }}>
-        @Séverin
-      </div>
     </div>
   )
 }

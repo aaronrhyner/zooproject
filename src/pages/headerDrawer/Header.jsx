@@ -13,7 +13,7 @@ import {
 import { Menu } from '@mui/icons-material'
 import routes from '../../routes/Routes'
 
-function Sidebar() {
+function Header() {
   const [open, setOpen] = useState(false)
 
   const toggleDrawer = (open) => (event) => {
@@ -73,4 +73,4 @@ function Sidebar() {
   )
 }
 
-export default Sidebar
+export default Header
