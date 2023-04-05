@@ -1,7 +1,5 @@
-import { useState } from 'react'
-import { AppBar, Button } from '@mui/material'
+import { Box, Button } from '@mui/material'
 import { Link as RouterLink } from 'react-router-dom'
-import HomeIcon from '@mui/icons-material/Home'
 import PolicyIcon from '@mui/icons-material/Policy'
 import GavelIcon from '@mui/icons-material/Gavel'
 
@@ -18,27 +16,25 @@ function Footer() {
     boxShadow: '8px -2px 7px -1px  rgba(0,0,0,0.8)'
   }
   return (
-    <>
-      <div style={myFooterStyle}>
-        <Button
-          component={RouterLink}
-          to={'/legalnotice'}
-          style={{ textDecoration: 'none' }}
-          startIcon={<GavelIcon />}
-        >
-          Legal Notice
-        </Button>{' '}
-        |{' '}
-        <Button
-          component={RouterLink}
-          to={'/privacypolicy'}
-          style={{ textDecoration: 'none' }}
-          startIcon={<PolicyIcon />}
-        >
-          Privacy Policy
-        </Button>
-      </div>
-    </>
+    <Box style={myFooterStyle}>
+      <Button
+        component={RouterLink}
+        to={'/legalnotice'}
+        style={{ textDecoration: 'none' }}
+        startIcon={<GavelIcon />}
+      >
+        Legal Notice
+      </Button>{' '}
+      |{' '}
+      <Button
+        component={RouterLink}
+        to={'/privacypolicy'}
+        style={{ textDecoration: 'none' }}
+        startIcon={<PolicyIcon />}
+      >
+        Privacy Policy
+      </Button>
+    </Box>
   )
 }
 

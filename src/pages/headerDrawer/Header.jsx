@@ -28,7 +28,7 @@ function Header() {
   }
 
   return (
-    <div>
+    <Box>
       <AppBar position="static">
         <Toolbar>
           <IconButton
@@ -40,7 +40,7 @@ function Header() {
             <Menu />
           </IconButton>
           <RouterLink to={'/'}>
-            <img src={'zoohzuerich_logo.png'} alt={'logo'} />
+            <img src={'/pictures/zoohzuerich_logo.png'} alt={'logo'} />
           </RouterLink>
         </Toolbar>
       </AppBar>
@@ -69,7 +69,7 @@ function Header() {
           </List>
         </Box>
       </Drawer>
-    </div>
+    </Box>
   )
 }
 

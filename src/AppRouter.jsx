@@ -13,15 +13,9 @@ function AppRouter() {
           <Route path={route.path} element={route.element} />
         </Fragment>
       ))}
-      <Fragment key={2}>
-        <Route path={'/legalnotice'} element={<LegalNotice />} />
-      </Fragment>
-      <Fragment key={1}>
-        <Route path={'/privacypolicy'} element={<PrivacyPolicy />} />
-      </Fragment>
-      <Fragment key={1}>
-        <Route path={'/news/:id'} element={<InfoPage />} />
-      </Fragment>
+      <Route path={'/legalnotice'} element={<LegalNotice />} />
+      <Route path={'/privacypolicy'} element={<PrivacyPolicy />} />
+      <Route path={'/news/:id'} element={<InfoPage />} />
     </Routes>
   )
 }

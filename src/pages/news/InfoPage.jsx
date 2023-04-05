@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import news from './NewsArray'
-import { Grid, ImageList, ImageListItem } from '@mui/material'
+import { Box, ImageList, ImageListItem, Typography } from '@mui/material'
 
 export default function InfoPage() {
   const [obj, setObj] = useState({})
@@ -28,13 +28,28 @@ export default function InfoPage() {
     padding: '0 0'
   }
   return (
-    <div style={myCardStyle}>
+    <Box style={myCardStyle}>
       {obj && (
         <>
-          <h2>{obj.titel}</h2>
+          <Typography variant={'h2'}>{obj.titel}</Typography>
           <img style={imgStyling} src={obj.img} alt={obj.alt} height={100} />
-          <h4>{obj.text}</h4>
-
+          <Typography variant={'h4'}>{obj.text}</Typography>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+            no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+            dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+            voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+            dolor sit amet.
+          </p>
           {obj.imgs && (
             <ImageList
               sx={{ width: 500, height: 450 }}
@@ -52,6 +67,6 @@ export default function InfoPage() {
           )}
         </>
       )}
-    </div>
+    </Box>
   )
 }
