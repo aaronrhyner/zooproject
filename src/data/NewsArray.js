@@ -19,6 +19,26 @@ const news = [
       {
         alt: '',
         src: '/pictures/news/fledermaus/fledermausorange.jpeg'
+      },
+      {
+        alt: '',
+        src: '/pictures/news/fledermaus/fledermausorange.jpeg'
+      },
+      {
+        alt: '',
+        src: '/pictures/news/fledermaus/fledermausorange.jpeg'
+      },
+      {
+        alt: '',
+        src: '/pictures/news/fledermaus/fledermausorange.jpeg'
+      },
+      {
+        alt: '',
+        src: '/pictures/news/fledermaus/fledermausorange.jpeg'
+      },
+      {
+        alt: '',
+        src: '/pictures/news/fledermaus/fledermausorange.jpeg'
       }
     ],
     alt: 'Fledermaus-Bild ',
@@ -29,11 +49,43 @@ const news = [
   {
     id: 2,
     titel: 'Helloween Special ',
-    img: '/pictures/news/helloween.png',
+    img: '/pictures/news/helloween/helloween.png',
     imgs: [
       {
         alt: '',
-        src: ''
+        src: '/pictures/news/helloween/helloween.png'
+      },
+      {
+        alt: '',
+        src: '/pictures/news/helloween/helloween.png'
+      },
+      {
+        alt: '',
+        src: '/pictures/news/helloween/helloween.png'
+      },
+      {
+        alt: '',
+        src: '/pictures/news/helloween/helloween.png'
+      },
+      {
+        alt: '',
+        src: '/pictures/news/helloween/helloween.png'
+      },
+      {
+        alt: '',
+        src: '/pictures/news/helloween/helloween.png'
+      },
+      {
+        alt: '',
+        src: '/pictures/news/helloween/helloween.png'
+      },
+      {
+        alt: '',
+        src: '/pictures/news/helloween/helloween.png'
+      },
+      {
+        alt: '',
+        src: '/pictures/news/helloween/helloween.png'
       }
     ],
     alt: 'Helloween-Bild ',
@@ -44,11 +96,43 @@ const news = [
   {
     id: 3,
     titel: 'Vogel Fütterung',
-    img: '/pictures/news/vogel.png',
+    img: '/pictures/news/vogel/vogel.png',
     imgs: [
       {
         alt: '',
-        src: ''
+        src: '/pictures/news/vogel/vogel.png'
+      },
+      {
+        alt: '',
+        src: '/pictures/news/vogel/vogel.png'
+      },
+      {
+        alt: '',
+        src: '/pictures/news/vogel/vogel.png'
+      },
+      {
+        alt: '',
+        src: '/pictures/news/vogel/vogel.png'
+      },
+      {
+        alt: '',
+        src: '/pictures/news/vogel/vogel.png'
+      },
+      {
+        alt: '',
+        src: '/pictures/news/vogel/vogel.png'
+      },
+      {
+        alt: '',
+        src: '/pictures/news/vogel/vogel.png'
+      },
+      {
+        alt: '',
+        src: '/pictures/news/vogel/vogel.png'
+      },
+      {
+        alt: '',
+        src: '/pictures/news/vogel/vogel.png'
       }
     ],
     alt: 'Helloween-Bild ',

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import news from '../../data/NewsArray'
-import { Box, ImageList, ImageListItem, Typography } from '@mui/material'
+import { Box, Grid, ImageList, ImageListItem, Typography } from '@mui/material'
 
 export default function InfoPage() {
   const [obj, setObj] = useState({})
@@ -29,33 +29,41 @@ export default function InfoPage() {
   }
   return (
     <Box style={myCardStyle}>
-      {obj && (
-        <Box>
-          <Typography variant={'h2'}>{obj.titel}</Typography>
-          <img style={imgStyling} src={obj.img} alt={obj.alt} height={100} />
-          <Typography variant={'h4'}>{obj.text}</Typography>
-          <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-            no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
-            dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-            voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-            dolor sit amet.
-          </p>
+      <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+        <Grid item xs={6}>
+          {obj && (
+            <Box>
+              <Typography variant={'h2'}>{obj.titel}</Typography>
+              <img
+                style={imgStyling}
+                src={obj.img}
+                alt={obj.alt}
+                height={100}
+              />
+              <Typography variant={'h4'}>{obj.text}</Typography>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                sed diam voluptua. At vero eos et accusam et justo duo dolores
+                et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
+                est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                invidunt ut labore et dolore magna aliquyam erat, sed diam
+                voluptua. At vero eos et accusam et justo duo dolores et ea
+                rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+                Lorem ipsum dolor sit amet.
+              </p>
+            </Box>
+          )}
+        </Grid>
+        <Grid item xs={6}>
           {obj.imgs && (
-            <ImageList
-              sx={{ width: 500, height: 450 }}
-              cols={3}
-              rowHeight={164}
-            >
+            <ImageList variant="masonry" cols={3} gap={50}>
               {obj.imgs.map((item) => (
                 <Box>
                   <ImageListItem key={item.img}>
@@ -65,8 +73,8 @@ export default function InfoPage() {
               ))}
             </ImageList>
           )}
-        </Box>
-      )}
+        </Grid>
+      </Grid>
     </Box>
   )
 }
