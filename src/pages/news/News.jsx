@@ -1,5 +1,5 @@
 import { Box, Button, Grid, Typography } from '@mui/material'
-import news from './NewsArray'
+import news from '../../data/NewsArray'
 import { Link as RouterLink } from 'react-router-dom'
 
 function News() {

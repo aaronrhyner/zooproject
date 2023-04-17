@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import news from './NewsArray'
+import news from '../../data/NewsArray'
 import { Box, ImageList, ImageListItem, Typography } from '@mui/material'
 
 export default function InfoPage() {
@@ -30,7 +30,7 @@ export default function InfoPage() {
   return (
     <Box style={myCardStyle}>
       {obj && (
-        <>
+        <Box>
           <Typography variant={'h2'}>{obj.titel}</Typography>
           <img style={imgStyling} src={obj.img} alt={obj.alt} height={100} />
           <Typography variant={'h4'}>{obj.text}</Typography>
@@ -57,15 +57,15 @@ export default function InfoPage() {
               rowHeight={164}
             >
               {obj.imgs.map((item) => (
-                <>
+                <Box>
                   <ImageListItem key={item.img}>
                     <img src={item.src} alt={item.alt} loading="lazy" />
                   </ImageListItem>
-                </>
+                </Box>
               ))}
             </ImageList>
           )}
-        </>
+        </Box>
       )}
     </Box>
   )
