@@ -1,5 +1,5 @@
 import Home from '../pages/home/Home'
-import HomeIcon from '@mui/icons-material/Home'
+import { Home as HomeIcon, Pets as PetsIcon } from '@mui/icons-material'
 import AnimalList from '../pages/animallist/AnimalList'
 
 const routes = [
@@ -13,7 +13,7 @@ const routes = [
     path: '/animals',
     name: 'Animals',
     element: <AnimalList />,
-    icon: ''
+    icon: <PetsIcon />
   }
 ]
 

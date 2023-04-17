@@ -2,7 +2,8 @@ const animalClasses = [
   {
     class_number: 1,
     number_of_animal_species_in_class: 41,
-    class_type: 'Mammal',
+    class_type: 'mammal',
+    class_type_de: 'Säugetier',
     animal_names: [
       'aardvark',
       'antelope',
@@ -50,7 +51,8 @@ const animalClasses = [
   {
     class_number: 2,
     number_of_animal_species_in_class: 20,
-    class_type: 'Bird',
+    class_type: 'bird',
+    class_type_de: 'Vogel',
     animal_names: [
       'chicken',
       'crow',
@@ -77,13 +79,15 @@ const animalClasses = [
   {
     class_number: 3,
     number_of_animal_species_in_class: 5,
-    class_type: 'Reptile',
+    class_type: 'reptile',
+    class_type_de: 'Reptil',
     animal_names: ['pitviper', 'seasnake', 'slowworm', 'tortoise', 'tuatara']
   },
   {
     class_number: 4,
     number_of_animal_species_in_class: 13,
-    class_type: 'Fish',
+    class_type: 'fish',
+    class_type_de: 'Fish',
     animal_names: [
       'bass',
       'carp',
@@ -103,13 +107,15 @@ const animalClasses = [
   {
     class_number: 5,
     number_of_animal_species_in_class: 4,
-    class_type: 'Amphibian',
+    class_type: 'amphibian',
+    class_type_de: 'Amphibie',
     animal_names: ['frog', 'frog', 'newt', 'toad']
   },
   {
     class_number: 6,
     number_of_animal_species_in_class: 8,
-    class_type: 'Bug',
+    class_type: 'bug',
+    class_type_de: 'Käfer',
     animal_names: [
       'flea',
       'gnat',
@@ -124,7 +130,8 @@ const animalClasses = [
   {
     class_number: 7,
     number_of_animal_species_in_class: 10,
-    class_type: 'Invertebrate',
+    class_type: 'invertebrate',
+    class_type_de: 'Wirbellose',
     animal_names: [
       'clam',
       'crab',

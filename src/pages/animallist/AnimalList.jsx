@@ -1,17 +1,19 @@
-import { Divider, List, ListItem } from '@mui/material'
-import zooAnimals from './ZooAnimals'
+import { List, ListItem, ListItemButton } from '@mui/material'
 import animalClasses from './AnimalClasses'
+import { useNavigate } from 'react-router-dom'
 
 function AnimalList() {
+  const navigate = useNavigate()
+
   return (
     <List>
-      {zooAnimals.map((a) => (
-        <ListItem>{a.animal_name}</ListItem>
+      {animalClasses.map((c) => (
+        <ListItem>
+          <ListItemButton onClick={() => navigate(`/animals/${c.class_type}`)}>
+            {c.class_type_de}
+          </ListItemButton>
+        </ListItem>
       ))}
-      <Divider />
-      {animalClasses.map((c) =>
-        c.animal_names.map((an) => <ListItem>{an}</ListItem>)
-      )}
     </List>
   )
 }
