@@ -45,8 +45,10 @@ function News() {
               <p>{news.text}</p>
             </Grid>
             <Grid item xs={6}>
-              Time: <u>{news.time}</u> Uhr <br />
-              Place: {news.place}
+              <p>
+                Time: <u>{news.time}</u> Uhr{' '}
+              </p>
+              <p>Place: {news.place}</p>
             </Grid>
           </Grid>
         </Button>

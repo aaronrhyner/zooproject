@@ -24,8 +24,8 @@ function Footer() {
         startIcon={<GavelIcon />}
       >
         Legal Notice
-      </Button>{' '}
-      |{' '}
+      </Button>
+      |
       <Button
         component={RouterLink}
         to={'/privacypolicy'}

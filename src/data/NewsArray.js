@@ -52,40 +52,32 @@ const news = [
     img: '/pictures/news/helloween/helloween.png',
     imgs: [
       {
-        alt: '',
-        src: '/pictures/news/helloween/helloween.png'
+        alt: 'biglion',
+        src: '/pictures/news/helloween/biglion.png'
+      },
+      {
+        alt: 'comiclion',
+        src: '/pictures/news/helloween/comiclion.png'
+      },
+      {
+        alt: 'famlion',
+        src: '/pictures/news/helloween/famlion.png'
+      },
+      {
+        alt: 'lion',
+        src: '/pictures/news/helloween/lion.png'
+      },
+      {
+        alt: 'lionkuerbis',
+        src: '/pictures/news/helloween/lionkuerbis.png'
+      },
+      {
+        alt: 'logolion',
+        src: '/pictures/news/helloween/logolion.png'
       },
       {
         alt: '',
-        src: '/pictures/news/helloween/helloween.png'
-      },
-      {
-        alt: '',
-        src: '/pictures/news/helloween/helloween.png'
-      },
-      {
-        alt: '',
-        src: '/pictures/news/helloween/helloween.png'
-      },
-      {
-        alt: '',
-        src: '/pictures/news/helloween/helloween.png'
-      },
-      {
-        alt: '',
-        src: '/pictures/news/helloween/helloween.png'
-      },
-      {
-        alt: '',
-        src: '/pictures/news/helloween/helloween.png'
-      },
-      {
-        alt: '',
-        src: '/pictures/news/helloween/helloween.png'
-      },
-      {
-        alt: '',
-        src: '/pictures/news/helloween/helloween.png'
+        src: '/pictures/news/helloween/personlion.png'
       }
     ],
     alt: 'Helloween-Bild ',
@@ -100,11 +92,11 @@ const news = [
     imgs: [
       {
         alt: '',
-        src: '/pictures/news/vogel/vogel.png'
+        src: '/pictures/news/vogel/birdfly.png'
       },
       {
         alt: '',
-        src: '/pictures/news/vogel/vogel.png'
+        src: '/pictures/news/vogel/birdonball.png'
       },
       {
         alt: '',
