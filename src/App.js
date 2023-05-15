@@ -1,7 +1,7 @@
 import './App.css'
-import Sidebar from './pages/headerDrawer/Header'
 import AppRouter from './AppRouter'
 import Footer from './pages/footerDrawer/Footer'
+import Header from './pages/header/Header'
 
 function App() {
   return (

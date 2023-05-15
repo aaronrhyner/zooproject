@@ -34,7 +34,7 @@ function Header() {
           </IconButton>
           <Grid item>
             <img
-              src={'zoohzuerich_logo.png'}
+              src={'pictures/zoohzuerich_logo.png'}
               alt={'logo'}
               onClick={() => navigate('/')}
             />
