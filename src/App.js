@@ -5,8 +5,8 @@ import Footer from './pages/footerDrawer/Footer'
 
 function App() {
   return (
-    <div className="App">
-      <Sidebar />
+    <div className='App'>
+      <Header />
       <AppRouter />
       <Footer />
     </div>
