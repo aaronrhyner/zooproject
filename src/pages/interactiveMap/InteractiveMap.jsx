@@ -1,4 +1,3 @@
-import * as React from 'react'
 import { tiere } from './data/AnimalData'
 import InteractiveMapDialog from './InteractiveMapDialog'
 import { useState } from 'react'
@@ -8,7 +7,6 @@ export default function InteractiveMap() {
   const [obj, setObj] = useState({})
 
   function handleClickOpen(tier) {
-    console.log(JSON.stringify(tier))
     setObj(tier)
     setOpen(true)
   }
@@ -20,19 +18,19 @@ export default function InteractiveMap() {
   return (
     <div>
       <img
-        src={'zoomap.png'}
-        alt="zoomap"
+        src={'pictures/map/zoomap.png'}
+        alt='zoomap'
         useMap={'#workmap'}
-        width="1500px"
-        height="auto"
+        width='1500px'
+        height='auto'
         id={'zoomappicture'}
       />
 
-      <map name="workmap">
+      <map name='workmap'>
         {tiere.map((tier) => (
           <area
             id={tier.name}
-            shape="rect"
+            shape='rect'
             coords={tier.coords}
             alt={tier.name}
             onClick={() => handleClickOpen(tier)}

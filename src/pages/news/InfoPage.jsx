@@ -7,9 +7,8 @@ export default function InfoPage() {
   const [obj, setObj] = useState({})
   const { id } = useParams()
   useEffect(() => {
-    console.log(news.find((obj) => obj.id === 1))
     setObj(news.find((obj) => obj.id === Number.parseInt(id)))
-  }, [])
+  }, [id])
 
   useEffect(() => {
     console.log(obj)
@@ -63,11 +62,11 @@ export default function InfoPage() {
         </Grid>
         <Grid item xs={6}>
           {obj.imgs && (
-            <ImageList variant="masonry" cols={3} gap={50}>
+            <ImageList variant='masonry' cols={3} gap={50}>
               {obj.imgs.map((item) => (
                 <Box>
                   <ImageListItem key={item.img}>
-                    <img src={item.src} alt={item.alt} loading="lazy" />
+                    <img src={item.src} alt={item.alt} loading='lazy' />
                   </ImageListItem>
                 </Box>
               ))}

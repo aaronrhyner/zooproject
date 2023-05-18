@@ -29,12 +29,12 @@ function Header() {
 
   return (
     <Box>
-      <AppBar position="static">
+      <AppBar position='static'>
         <Toolbar>
           <IconButton
-            edge="start"
-            color="inherit"
-            aria-label="menu"
+            edge='start'
+            color='inherit'
+            aria-label='menu'
             onClick={toggleDrawer(true)}
           >
             <Menu />
@@ -47,7 +47,7 @@ function Header() {
 
       <Drawer anchor={'left'} open={open} onClose={toggleDrawer(false)}>
         <Box
-          role="presentation"
+          role='presentation'
           onClick={toggleDrawer(false)}
           onKeyDown={toggleDrawer(false)}
         >

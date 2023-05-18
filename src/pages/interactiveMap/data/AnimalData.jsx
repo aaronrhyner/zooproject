@@ -9,7 +9,7 @@ export const tiere = [
     genus: 'Panthera',
     family: 'Katze',
     class: 'Raubtiere',
-    pic: './loewe_im_zoo.jpg'
+    pic: 'pictures/map/loewe_im_zoo.jpg'
   },
 
   {
@@ -22,7 +22,7 @@ export const tiere = [
     genus: 'Pinguin',
     family: 'Pinguin',
     class: 'Vögel',
-    pic: './pinguin_im_zoo.jpg'
+    pic: 'pictures/map/pinguin_im_zoo.jpg'
   },
 
   {
@@ -35,6 +35,6 @@ export const tiere = [
     genus: 'Pferde',
     family: 'Wüstenpferde',
     class: 'Säugetiere',
-    pic: './zebra.png'
+    pic: 'pictures/map/zebra.png'
   }
 ]
