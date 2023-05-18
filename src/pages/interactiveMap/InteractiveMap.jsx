@@ -1,6 +1,6 @@
-import { tiere } from './data/AnimalData'
 import InteractiveMapDialog from './InteractiveMapDialog'
 import { useState } from 'react'
+import { tiere } from '../../data/MapData'
 
 export default function InteractiveMap() {
   const [open, setOpen] = useState(false)
@@ -29,6 +29,7 @@ export default function InteractiveMap() {
       <map name='workmap'>
         {tiere.map((tier) => (
           <area
+            key={tier.name}
             id={tier.name}
             shape='rect'
             coords={tier.coords}

@@ -1,11 +1,11 @@
 import Home from '../pages/home/Home'
-import { Home as HomeIcon, Pets as PetsIcon } from '@mui/icons-material'
 import AnimalList from '../pages/animallist/AnimalList'
 import HomeIcon from '@mui/icons-material/Home'
 import NewspaperIcon from '@mui/icons-material/Newspaper'
 import News from '../pages/news/News'
 import InteractiveMap from '../pages/interactiveMap/InteractiveMap'
 import MapIcon from '@mui/icons-material/Map'
+import PetsIcon from '@mui/icons-material/Pets'
 
 const routes = [
   {

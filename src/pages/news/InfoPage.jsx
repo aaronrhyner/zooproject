@@ -6,13 +6,12 @@ import { Box, Grid, ImageList, ImageListItem, Typography } from '@mui/material'
 export default function InfoPage() {
   const [obj, setObj] = useState({})
   const { id } = useParams()
-  useEffect(() => {
-    setObj(news.find((obj) => obj.id === Number.parseInt(id)))
-  }, [id])
 
   useEffect(() => {
-    console.log(obj)
-  }, [obj])
+    setObj(news.find((obj) => obj.id === parseInt(id)))
+  }, [id])
+
+  useEffect(() => {}, [obj])
 
   const myCardStyle = {
     border: '1px solid var(--surface-border)',
@@ -63,12 +62,10 @@ export default function InfoPage() {
         <Grid item xs={6}>
           {obj.imgs && (
             <ImageList variant='masonry' cols={3} gap={50}>
-              {obj.imgs.map((item) => (
-                <Box>
-                  <ImageListItem key={item.img}>
-                    <img src={item.src} alt={item.alt} loading='lazy' />
-                  </ImageListItem>
-                </Box>
+              {obj.imgs.map((item, key) => (
+                <ImageListItem key={key}>
+                  <img src={item.src} alt={item.alt} loading='lazy' />
+                </ImageListItem>
               ))}
             </ImageList>
           )}

@@ -1,5 +1,5 @@
 import { useNavigate, useParams } from 'react-router-dom'
-import animalClassesData from './data/AnimalClassesData'
+import animalClassesData from '../../data/AnimalClassesData'
 import { List, ListItem, ListItemButton } from '@mui/material'
 
 function AnimalClassDetails() {

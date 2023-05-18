@@ -11,7 +11,6 @@ export const tiere = [
     class: 'Raubtiere',
     pic: 'pictures/map/loewe_im_zoo.jpg'
   },
-
   {
     coords: '420,130,480,190',
     name: 'Königspinguine',
@@ -24,7 +23,6 @@ export const tiere = [
     class: 'Vögel',
     pic: 'pictures/map/pinguin_im_zoo.jpg'
   },
-
   {
     coords: '950,140,1050,200',
     name: 'Zebras',

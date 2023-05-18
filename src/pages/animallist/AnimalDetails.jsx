@@ -1,5 +1,5 @@
 import { Typography } from '@mui/material'
-import animalsData from './data/AnimalsData'
+import animalsData from '../../data/AnimalsData'
 import { useParams } from 'react-router-dom'
 
 function AnimalDetails() {

@@ -27,6 +27,7 @@ function News() {
 
       {news.map((news) => (
         <Button
+          key={news.id}
           component={RouterLink}
           to={'/news/' + news.id}
           style={boxStyling}
