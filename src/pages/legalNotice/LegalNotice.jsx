@@ -64,9 +64,9 @@ function LegalNotice() {
         Die Europäische Kommission stellt eine Plattform zur
         Online-Streitbeilegung (OS) bereit:{' '}
         <a
-          href="https://ec.europa.eu/consumers/odr/"
-          target="_blank"
-          rel="noopener noreferrer"
+          href='https://ec.europa.eu/consumers/odr/'
+          target='_blank'
+          rel='noopener noreferrer'
         >
           https://ec.europa.eu/consumers/odr/
         </a>
@@ -80,7 +80,7 @@ function LegalNotice() {
       </p>
 
       <p>
-        Quelle: <a href="https://www.e-recht24.de">eRecht24</a>
+        Quelle: <a href='https://www.e-recht24.de'>eRecht24</a>
       </p>
     </div>
   )

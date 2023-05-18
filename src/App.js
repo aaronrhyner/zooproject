@@ -1,12 +1,14 @@
 import './App.css'
-import Sidebar from './pages/sidebarDrawer/Sidebar'
 import AppRouter from './AppRouter'
+import Footer from './pages/footerDrawer/Footer'
+import Header from './pages/header/Header'
 
 function App() {
   return (
-    <div className="App">
-      <Sidebar />
+    <div className='App'>
+      <Header />
       <AppRouter />
+      <Footer />
     </div>
   )
 }
