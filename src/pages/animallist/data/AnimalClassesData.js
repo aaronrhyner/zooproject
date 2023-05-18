@@ -1,4 +1,4 @@
-const animalClasses = [
+const animalClassesData = [
   {
     class_number: 1,
     number_of_animal_species_in_class: 41,
@@ -147,4 +147,4 @@ const animalClasses = [
   }
 ]
 
-export default animalClasses
+export default animalClassesData

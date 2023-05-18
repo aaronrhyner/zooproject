@@ -1,4 +1,4 @@
-const zooAnimals = [
+const animalsData = [
   {
     animal_name: 'aardvark',
     hair: 1,
@@ -2021,4 +2021,4 @@ const zooAnimals = [
   }
 ]
 
-export default zooAnimals
+export default animalsData

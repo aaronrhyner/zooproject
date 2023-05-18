@@ -1,5 +1,5 @@
 import { List, ListItem, ListItemButton } from '@mui/material'
-import animalClasses from './AnimalClasses'
+import animalClassesData from './data/AnimalClassesData'
 import { useNavigate } from 'react-router-dom'
 
 function AnimalList() {
@@ -7,10 +7,12 @@ function AnimalList() {
 
   return (
     <List>
-      {animalClasses.map((c) => (
-        <ListItem>
-          <ListItemButton onClick={() => navigate(`/animals/${c.class_type}`)}>
-            {c.class_type_de}
+      {animalClassesData.map((clazz) => (
+        <ListItem key={clazz.class_number}>
+          <ListItemButton
+            onClick={() => navigate(`/animals/${clazz.class_type}`)}
+          >
+            {clazz.class_type_de}
           </ListItemButton>
         </ListItem>
       ))}

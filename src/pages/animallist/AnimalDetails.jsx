@@ -1,18 +1,17 @@
-import { useLocation } from 'react-router-dom'
-import { List } from '@mui/material'
-import zooAnimals from './ZooAnimals'
+import { Typography } from '@mui/material'
+import animalsData from './data/AnimalsData'
+import { useParams } from 'react-router-dom'
 
 function AnimalDetails() {
-  const location = useLocation()
+  const { animalname } = useParams()
 
   return (
-    <List>
+    <Typography variant={'h4'}>
       {
-        zooAnimals.find(
-          (a) => a.animal_name === location.pathname.split('/')[3]
-        ).animal_name
+        animalsData.find((animal) => animal.animal_name === animalname)
+          .animal_name
       }
-    </List>
+    </Typography>
   )
 }
 

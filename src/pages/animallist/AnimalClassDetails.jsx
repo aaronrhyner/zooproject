@@ -1,23 +1,21 @@
-import { useLocation, useNavigate } from 'react-router-dom'
-import animalClasses from './AnimalClasses'
+import { useNavigate, useParams } from 'react-router-dom'
+import animalClassesData from './data/AnimalClassesData'
 import { List, ListItem, ListItemButton } from '@mui/material'
 
 function AnimalClassDetails() {
-  const location = useLocation()
+  const { classname } = useParams()
   const navigate = useNavigate()
 
   return (
     <List>
-      {animalClasses
-        .find((ac) => ac.class_type === location.pathname.substring(9))
-        .animal_names.map((an) => (
-          <ListItem>
+      {animalClassesData
+        .find((clazz) => clazz.class_type === classname)
+        .animal_names.map((animal) => (
+          <ListItem key={animal}>
             <ListItemButton
-              onClick={() =>
-                navigate(`/animals/${location.pathname.substring(9)}/${an}`)
-              }
+              onClick={() => navigate(`/animals/${classname}/${animal}`)}
             >
-              {an}
+              {animal}
             </ListItemButton>
           </ListItem>
         ))}
