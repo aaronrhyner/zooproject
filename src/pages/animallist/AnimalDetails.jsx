@@ -1,15 +1,18 @@
 import { Typography } from '@mui/material'
-import animalsData from '../../data/AnimalsData'
 import { useParams } from 'react-router-dom'
+import animalListData from '../../data/AnimalListData'
 
 function AnimalDetails() {
-  const { animalname } = useParams()
+  const { classType, animalName } = useParams()
 
   return (
     <Typography variant={'h4'}>
       {
-        animalsData.find((animal) => animal.animal_name === animalname)
-          .animal_name
+        animalListData
+          .find((animalClass) => animalClass.classType === classType)
+          .animalObjects.find(
+            (animaObject) => animaObject.animalName === animalName
+          ).animalName
       }
     </Typography>
   )
