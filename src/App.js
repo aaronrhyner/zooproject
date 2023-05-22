@@ -1,6 +1,6 @@
 import './App.css'
 import AppRouter from './AppRouter'
-import Footer from './pages/footerDrawer/Footer'
+import Footer from './pages/footer/Footer'
 import Header from './pages/header/Header'
 
 function App() {

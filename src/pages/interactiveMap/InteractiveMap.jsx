@@ -1,6 +1,6 @@
+import { tiere } from '../../data/InteractiveMapData'
 import InteractiveMapDialog from './InteractiveMapDialog'
 import { useState } from 'react'
-import { tiere } from '../../data/MapData'
 
 export default function InteractiveMap() {
   const [open, setOpen] = useState(false)

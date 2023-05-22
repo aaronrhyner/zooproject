@@ -11,8 +11,6 @@ export default function InfoPage() {
     setObj(news.find((obj) => obj.id === parseInt(id)))
   }, [id])
 
-  useEffect(() => {}, [obj])
-
   const myCardStyle = {
     border: '1px solid var(--surface-border)',
     padding: '10px',
@@ -62,10 +60,12 @@ export default function InfoPage() {
         <Grid item xs={6}>
           {obj.imgs && (
             <ImageList variant='masonry' cols={3} gap={50}>
-              {obj.imgs.map((item, key) => (
-                <ImageListItem key={key}>
-                  <img src={item.src} alt={item.alt} loading='lazy' />
-                </ImageListItem>
+              {obj.imgs.map((item) => (
+                <Box>
+                  <ImageListItem key={item.img}>
+                    <img src={item.src} alt={item.alt} loading='lazy' />
+                  </ImageListItem>
+                </Box>
               ))}
             </ImageList>
           )}
