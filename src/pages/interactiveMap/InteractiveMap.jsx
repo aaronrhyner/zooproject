@@ -1,4 +1,4 @@
-import { tiere } from './data/AnimalData'
+import { tiere } from '../../data/InteractiveMapData'
 import InteractiveMapDialog from './InteractiveMapDialog'
 import { useState } from 'react'
 
