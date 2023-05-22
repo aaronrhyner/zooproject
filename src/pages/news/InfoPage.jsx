@@ -10,10 +10,6 @@ export default function InfoPage() {
     setObj(news.find((obj) => obj.id === Number.parseInt(id)))
   }, [id])
 
-  useEffect(() => {
-    console.log(obj)
-  }, [obj])
-
   const myCardStyle = {
     border: '1px solid var(--surface-border)',
     padding: '10px',

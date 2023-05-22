@@ -15,6 +15,7 @@ function Footer() {
     color: '#1976d2',
     boxShadow: '8px -2px 7px -1px  rgba(0,0,0,0.8)'
   }
+
   return (
     <Box style={myFooterStyle}>
       <Button
